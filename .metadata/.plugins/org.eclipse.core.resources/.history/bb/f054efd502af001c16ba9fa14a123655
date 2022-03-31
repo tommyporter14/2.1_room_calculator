@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class room_calculator {
+
+	public static void main(String[] args) {
+	Scanner scnr = new Scanner(System.in);	
+	
+	double length;
+	double width;
+	
+	System.out.println("Enter Length: ");
+	length = scnr.nextDouble();
+	
+	System.out.println("Enter Width: ");
+	width = scnr.nextDouble();
+	
+	scnr.close();
+	}
+
+}

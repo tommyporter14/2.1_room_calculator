@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class room_calculator {
+
+	public static void main(String[] args) {	
+	
+	double length;//all variables
+	double width;
+	double area;
+	double perimeter;
+	String answer;
+	
+	Scanner scnr = new Scanner(System.in);//new scanner
+	
+		System.out.println("Enter Length: ");//get length
+		length = scnr.nextDouble();
+		
+		System.out.println("Enter Width: ");//get width
+		width = scnr.nextDouble();
+		
+		area = length * width;//calculations
+		perimeter = 2 * length + 2 * width;
+		
+		System.out.println("Area:" + area);//results
+		System.out.println("Perimeter:" + perimeter);
+		
+		scnr.nextLine();//not sure why i needed this but it allows me to take string input after double input
+		
+		System.out.println("Continue?");//ask to continue or not
+		answer = scnr.nextLine();
+		
+		
+	
+	scnr.close();//close scanner
+	}
+
+}
